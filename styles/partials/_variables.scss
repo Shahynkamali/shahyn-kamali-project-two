@@ -16,3 +16,10 @@ $font2: 'Josefin Sans', sans-serif;
     display: flex;
     flex-direction: column
 }
+
+@mixin center{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+}

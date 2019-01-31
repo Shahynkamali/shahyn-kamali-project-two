@@ -1,0 +1,10 @@
+header{
+    max-width:1600px;
+    height:100vh;
+    background: url("./images/home-image-1.jpg");
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 30vh 40vh 30vh;
+}

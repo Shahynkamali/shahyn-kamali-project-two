@@ -164,4 +164,88 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 125%;
+}
+
+header {
+  max-width: 1600px;
+  height: 100vh;
+  background: url("./images/home-image-1.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 30vh 40vh 30vh;
+      grid-template-rows: 30vh 40vh 30vh;
+}
+
+nav {
+  width: 100%;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navigationTitle {
+  color: white;
+  width: 13%;
+}
+
+.navigationTitle h4 {
+  padding: 10px 20px;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.navigationList {
+  width: 87%;
+}
+
+.navigationList ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navigationList ul li {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  list-style-type: none;
+  height: 100%;
+}
+
+.navigationList a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
 /*# sourceMappingURL=style.css.map */

@@ -4,5 +4,15 @@ $darkgrey: #4f4f4f;
 $green: #0e902d;
 $white: #f0efed;
 $darkgreen: #074115;
-$font1: font-family: 'Roboto', sans-serif;
-$font2: font-family: 'Josefin Sans', sans-serif;
+$font1: 'Roboto', sans-serif;
+$font2: 'Josefin Sans', sans-serif;
+
+@mixin flexR{
+    display:flex;
+    flex-direction:row;
+}
+
+@mixin flexC{
+    display: flex;
+    flex-direction: column
+}

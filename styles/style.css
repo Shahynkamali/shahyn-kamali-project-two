@@ -197,6 +197,11 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border: 1px solid red;
+  width: 100%;
 }
 
 .navigationTitle {
@@ -497,5 +502,179 @@ header {
       grid-column-start: 1;
   grid-column-end: 10;
   background: #f0efed;
+}
+
+.labels {
+  display: -ms-grid;
+  display: grid;
+  height: 60vh;
+  -ms-grid-columns: 5% 5% 40% 5% 5% 40%;
+      grid-template-columns: 5% 5% 40% 5% 5% 40%;
+  -ms-grid-rows: 10% 35% 10% 35% 10%;
+      grid-template-rows: 10% 35% 10% 35% 10%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-top: 4%;
+}
+
+.labels .leaf {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.labels .leafText {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 4;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  display: -ms-grid;
+  display: grid;
+}
+
+.labels .leafText h3 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.labels .leafText p {
+  line-height: 37px;
+  font-family: "Roboto", sans-serif;
+}
+
+.labels .users {
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 6;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.labels .usersText {
+  -ms-grid-column: 6;
+      grid-column-start: 6;
+  grid-column-end: 7;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  display: -ms-grid;
+  display: grid;
+}
+
+.labels .usersText h3 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.labels .usersText p {
+  line-height: 37px;
+  font-family: "Roboto", sans-serif;
+}
+
+.labels .file {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.labels .fileText {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 4;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 5;
+  display: -ms-grid;
+  display: grid;
+}
+
+.labels .fileText h3 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.labels .fileText p {
+  line-height: 37px;
+  font-family: "Roboto", sans-serif;
+}
+
+.labels .phone {
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 6;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.labels .phoneText {
+  -ms-grid-column: 6;
+      grid-column-start: 6;
+  grid-column-end: 7;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 5;
+  display: -ms-grid;
+  display: grid;
+}
+
+.labels .phoneText h3 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.labels .phoneText p {
+  line-height: 37px;
+  font-family: "Roboto", sans-serif;
+}
+
+.labels .leaf,
+.labels .phone,
+.labels .users,
+.labels .file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f8e71c;
+  border-radius: 50%;
+  margin: 7px 15px;
+}
+
+.fullBleed {
+  height: 55vh;
+  background: url("./images/banner-image.jpg");
+  background-position: center center;
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */

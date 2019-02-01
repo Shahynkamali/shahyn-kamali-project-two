@@ -1,0 +1,124 @@
+.labels{
+    display:grid;
+    height:60vh;
+    grid-template-columns: 5% 5% 40% 5% 5% 40%;
+    grid-template-rows: 10% 35% 10% 35% 10%;
+    align-content: center;
+    padding-top: 4%;
+
+    .leaf{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .leafText{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1; 
+        grid-row-end: 3;
+        display: grid;
+        h3{
+            font-family: $font2;
+            text-transform: capitalize;
+            align-self: center;
+        }
+        p{
+            line-height: 37px;
+            font-family: $font1;
+        }
+
+
+        }
+    .users{
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        
+
+    }
+    .usersText{
+        grid-column-start: 6;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        display: grid;
+        h3 {
+            font-family: $font2;
+            text-transform: capitalize;
+            align-self: center;
+        }
+        p {
+            line-height: 37px;
+            font-family: $font1;
+        }
+
+    }
+    .file{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+    }
+    .fileText{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        display: grid;
+        h3 {
+            font-family: $font2;
+            text-transform: capitalize;
+            align-self: center;
+        }
+        p {
+            line-height: 37px;
+            font-family: $font1;
+        }
+
+    }
+
+    .phone{
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+    }
+    .phoneText{
+        grid-column-start: 6;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        display: grid;
+        h3 {
+            font-family: $font2;
+            text-transform: capitalize;
+            align-self: center;
+        }
+        p {
+            line-height: 37px;
+            font-family: $font1;
+        }
+
+    }
+    .leaf,
+    .phone,
+    .users,
+    .file{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background:$yellow;
+        border-radius: 50%;
+        margin: 7px 15px;
+    }
+    
+    
+    
+}
+

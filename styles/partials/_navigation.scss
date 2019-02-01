@@ -2,6 +2,9 @@
 .navbar{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    border: 1px solid red;
+    width: 100%;
 }
 .navigationTitle{
     color:white;

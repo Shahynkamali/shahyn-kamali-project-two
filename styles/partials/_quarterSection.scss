@@ -1,0 +1,95 @@
+.quarterSection{
+    background:white;
+    height:100vh;
+    display:grid;
+    grid-template-rows:10% 17.5% 17.5% 10% 17.5% 17.5% 10%;
+    grid-template-columns: 22.5% 22.5% 10% 22.5% 22.5%;
+
+    .miniWrapperOne{
+        grid-row-start: 5;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        @include flexC;
+        justify-content: center;
+        align-items: flex-end;
+        h3{
+            font-family: $font2;
+            text-transform: capitalize;
+        }
+        p{
+            text-align: right;
+            width:80%;
+            line-height: 2rem;
+            font-family: $font1;
+        }
+        button {
+            margin-top: 5%;
+        }
+        
+        
+    }
+
+    .flowerBackground{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background:url("./images/left-flowers.jpg");
+        background-position: center center;
+        background-size:cover;
+        background-repeat:no-repeat;
+        box-shadow: 30px 30px $yellow;
+
+
+    }
+    .miniWrapperTwo{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 4;
+        grid-column-end: 6;
+        @include flexC;
+        justify-content: center;
+        align-items: flex-start;
+
+        h3 {
+            font-family: $font2;
+            text-transform: capitalize;
+        }
+
+        p {
+            text-align: left;
+            width: 80%;
+            line-height: 2rem;
+            font-family: $font1;
+        }
+        button{
+            margin-top:5%;
+        }
+
+        
+    }
+    .budBackground{
+        grid-row-start: 5;
+        grid-row-end: 7;
+        grid-column-start: 4;
+        grid-column-end: 6;
+        background:url("./images/right-flowers.jpg");
+        background-position: center center;
+        background-size:cover;
+        background-repeat:no-repeat;
+        box-shadow: -20px 27px #f8e71c;
+        z-index:99;
+        
+    }
+    .emptyDiv{
+        grid-row-start: 7;
+        grid-row-end: 8;
+        grid-column-start: 1;
+        grid-column-end: 10;
+        z-index:9
+
+    }
+
+}
+

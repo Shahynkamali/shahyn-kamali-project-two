@@ -174,6 +174,73 @@ html {
   font-size: 125%;
 }
 
+.greenButton {
+  background: #0e902d;
+  color: white;
+  border: none;
+  padding: 15px 41px;
+  text-transform: capitalize;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navigationTitle {
+  color: white;
+  width: 13%;
+}
+
+.navigationTitle h4 {
+  padding: 10px 20px;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.navigationList {
+  width: 87%;
+}
+
+.navigationList ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navigationList ul li {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  list-style-type: none;
+  height: 100%;
+}
+
+.navigationList a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 header {
   max-width: 1600px;
   height: 100vh;
@@ -255,65 +322,169 @@ header {
   z-index: 9;
 }
 
-nav {
-  width: 100%;
+.container {
+  background: #f0efed;
 }
 
-.navbar {
+.aboutPlanted {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60vh;
 }
 
-.navigationTitle {
-  color: white;
-  width: 13%;
-}
-
-.navigationTitle h4 {
-  padding: 10px 20px;
+.aboutPlanted h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
   text-transform: capitalize;
-  font-size: 1.3rem;
-  font-family: "Josefin Sans", sans-serif;
 }
 
-.navigationList {
-  width: 87%;
+.aboutPlanted p {
+  width: 80%;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  line-height: 2rem;
 }
 
-.navigationList ul {
-  height: 100%;
+.aboutPlanted button {
+  margin: 4% 0;
+}
+
+.quarterSection {
+  background: white;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10% 17.5% 17.5% 10% 17.5% 17.5% 10%;
+      grid-template-rows: 10% 17.5% 17.5% 10% 17.5% 17.5% 10%;
+  -ms-grid-columns: 22.5% 22.5% 10% 22.5% 22.5%;
+      grid-template-columns: 22.5% 22.5% 10% 22.5% 22.5%;
+}
+
+.quarterSection .miniWrapperOne {
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 7;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-.navigationList ul li {
-  padding: 10px 20px;
-  text-transform: uppercase;
-  font-size: 1rem;
+.quarterSection .miniWrapperOne h3 {
   font-family: "Josefin Sans", sans-serif;
-  list-style-type: none;
-  height: 100%;
+  text-transform: capitalize;
 }
 
-.navigationList a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+.quarterSection .miniWrapperOne p {
+  text-align: right;
+  width: 80%;
+  line-height: 2rem;
+  font-family: "Roboto", sans-serif;
 }
 
-.wrapper {
-  width: 1280px;
-  margin: 0 auto;
-  border: 1px solid red;
+.quarterSection .miniWrapperOne button {
+  margin-top: 5%;
+}
+
+.quarterSection .flowerBackground {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 4;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  background: url("./images/left-flowers.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 30px 30px #f8e71c;
+          box-shadow: 30px 30px #f8e71c;
+}
+
+.quarterSection .miniWrapperTwo {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 4;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.quarterSection .miniWrapperTwo h3 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+}
+
+.quarterSection .miniWrapperTwo p {
+  text-align: left;
+  width: 80%;
+  line-height: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.quarterSection .miniWrapperTwo button {
+  margin-top: 5%;
+}
+
+.quarterSection .budBackground {
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 7;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 6;
+  background: url("./images/right-flowers.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: -20px 27px #f8e71c;
+          box-shadow: -20px 27px #f8e71c;
+  z-index: 99;
+}
+
+.quarterSection .emptyDiv {
+  -ms-grid-row: 7;
+      grid-row-start: 7;
+  grid-row-end: 8;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 10;
+  z-index: 9;
 }
 /*# sourceMappingURL=style.css.map */

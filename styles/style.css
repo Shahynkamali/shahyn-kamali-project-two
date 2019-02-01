@@ -197,27 +197,17 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  border: 1px solid red;
-  width: 100%;
 }
 
 .navigationTitle {
   color: white;
-  width: 13%;
 }
 
 .navigationTitle h4 {
   padding: 10px 20px;
   text-transform: capitalize;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   font-family: "Josefin Sans", sans-serif;
-}
-
-.navigationList {
-  width: 87%;
 }
 
 .navigationList ul {
@@ -238,6 +228,8 @@ html {
   font-family: "Josefin Sans", sans-serif;
   list-style-type: none;
   height: 100%;
+  margin-top: 2%;
+  margin-left: 6%;
 }
 
 .navigationList a {
@@ -248,17 +240,22 @@ html {
 
 header {
   max-width: 1600px;
-  height: 100vh;
+  height: 90vh;
   background: url("./images/home-image-1.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.headers {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 20% 20% 20% 20% 20%;
-      grid-template-rows: 20% 20% 20% 20% 20%;
+  -ms-grid-rows: 15% 20% 20% 20% 10% 10% 5% 5% 10%;
+      grid-template-rows: 15% 20% 20% 20% 10% 10% 5% 5% 10%;
   -ms-grid-columns: 30% 13% 6% 7% 14% 30%;
       grid-template-columns: 30% 13% 6% 7% 14% 30%;
+  height: 80vh;
 }
 
 .headerTitle {
@@ -316,9 +313,9 @@ header {
 
 .emptyDiv {
   background: #f0efed;
-  -ms-grid-row: 5;
-      grid-row-start: 5;
-  grid-row-end: 10;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 9;
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 10;

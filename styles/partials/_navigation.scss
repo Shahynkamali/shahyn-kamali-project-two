@@ -2,23 +2,19 @@
 .navbar{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    border: 1px solid red;
-    width: 100%;
 }
 .navigationTitle{
     color:white;
-    width: 13%;
         h4{
             padding:10px 20px;
             text-transform: capitalize;
-            font-size: 1.3rem;
+            font-size: 1.8rem;
             font-family: $font2;
     }
 }
 
 .navigationList{
-    width:87%;
+
 
     ul{
         height: 100%;
@@ -30,6 +26,8 @@
         font-family: $font2;
         list-style-type: none;
         height:100%;
+        margin-top: 2%;
+        margin-left: 6%;
 
         }
     }

@@ -172,7 +172,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 html {
   font-size: 125%;
-  width: 100vw;
 }
 
 .greenButton {
@@ -745,5 +744,55 @@ header {
   font-family: "Roboto", sans-serif;
   line-height: 40px;
   margin-bottom: 3%;
+}
+
+.gal {
+  background: white;
+  margin: 6% 0;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+}
+
+.gallery .galleryItem {
+  width: calc((100% - 6%)/ 3);
+  margin: 3%;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.gallery .galleryItem:nth-of-type(3n + 1) {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.gallery .galleryItem:nth-of-type(3n) {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+}
+
+footer .copyright {
+  clear: both;
+  color: white;
+  text-align: center;
+  background: black;
+  font-family: "Roboto", sans-serif;
+  word-spacing: 20%;
+  padding: 1% 0;
 }
 /*# sourceMappingURL=style.css.map */

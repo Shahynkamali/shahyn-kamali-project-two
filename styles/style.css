@@ -172,6 +172,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 html {
   font-size: 125%;
+  width: 100vw;
 }
 
 .greenButton {
@@ -186,7 +187,7 @@ html {
 .wrapper {
   width: 1280px;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .navbar {
@@ -676,5 +677,73 @@ header {
   background: url("./images/banner-image.jpg");
   background-position: center center;
   background-size: cover;
+}
+
+.founder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 60vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.founder .ladyImg {
+  -webkit-box-flex: calc(30% -5%);
+      -ms-flex: calc(30% -5%);
+          flex: calc(30% -5%);
+  margin-right: 5%;
+  -webkit-box-shadow: 20px 25px #f8e71c;
+          box-shadow: 20px 25px #f8e71c;
+}
+
+.founder .ladyImg img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.founder .aboutFounder {
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.founder .aboutFounder h2 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: capitalize;
+}
+
+.founder .aboutFounder p {
+  font-family: "Roboto", sans-serif;
+  line-height: 40px;
+  margin-bottom: 3%;
 }
 /*# sourceMappingURL=style.css.map */

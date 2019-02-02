@@ -184,7 +184,7 @@ html {
 }
 
 .wrapper {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   /* border: 1px solid red; */
 }
@@ -515,17 +515,17 @@ header {
 }
 
 .labels .leaf {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  grid-column-end: 3;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 2;
 }
 
 .labels .leafText {
-  -ms-grid-column: 3;
-      grid-column-start: 3;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
   grid-column-end: 4;
   -ms-grid-row: 1;
       grid-row-start: 1;
@@ -581,17 +581,17 @@ header {
 }
 
 .labels .file {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  grid-column-end: 3;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
   -ms-grid-row: 3;
       grid-row-start: 3;
   grid-row-end: 4;
 }
 
 .labels .fileText {
-  -ms-grid-column: 3;
-      grid-column-start: 3;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
   grid-column-end: 4;
   -ms-grid-row: 3;
       grid-row-start: 3;
@@ -749,38 +749,19 @@ header {
 }
 
 .gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 35px;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 400px;
 }
 
-.gallery .galleryItem {
-  width: calc((100% - 6%)/ 3);
-  margin: 3%;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-}
-
-.gallery .galleryItem:nth-of-type(3n + 1) {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.gallery .galleryItem:nth-of-type(3n) {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.gallery img {
+.gallery .galleryItem img {
   width: 100%;
-  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer .copyright {

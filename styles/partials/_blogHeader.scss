@@ -1,0 +1,45 @@
+nav.blogNav{
+    background:black;
+}
+
+header.blogBackground{
+    background: url("./images/blog-header-1.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:60vh;
+
+}
+.blogHeaders{
+    display:grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    height:100%;
+
+    .blogTitle{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end:8;
+
+        h1{
+            color:$yellow;
+            font-size:5rem;
+            text-transform: capitalize;
+        }
+    }
+    .blogBlock{
+        grid-column-start: 5;
+        grid-column-end: 11;
+        grid-row-start: 5;
+        grid-row-end:11;
+        
+    }
+    img{
+        width: 100%;
+        display:block;
+        box-shadow: -25px 20px $yellow;
+    }
+}
+main.blogMain{
+    background:$white;
+}

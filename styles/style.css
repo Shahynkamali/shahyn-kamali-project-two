@@ -1358,6 +1358,12 @@ header.contactBackground {
   text-transform: uppercase;
 }
 
+.emptyD {
+  height: 70px;
+  width: 100%;
+  background: #f0efed;
+}
+
 footer .copyright {
   clear: both;
   color: white;

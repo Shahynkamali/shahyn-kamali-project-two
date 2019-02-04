@@ -1176,8 +1176,8 @@ header.contactBackground {
   -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 4;
-  -ms-grid-row: 4;
-      grid-row-start: 4;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
   grid-row-end: 6;
 }
 
@@ -1185,6 +1185,7 @@ header.contactBackground {
   color: #f8e71c;
   font-size: 4rem;
   text-transform: capitalize;
+  margin-top: 15%;
 }
 
 .contactHeaders .contactForm {
@@ -1234,7 +1235,7 @@ header.contactBackground {
   border-color: #0e902d;
   display: block;
   background: white;
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 1.9;
   width: 47%;
   color: black;
@@ -1274,8 +1275,8 @@ header.contactBackground {
   color: white;
   width: 100%;
   border: none;
-  height: 20%;
-  margin-top: 5%;
+  height: 50px;
+  margin-top: 3%;
   font-weight: bold;
 }
 
@@ -1292,6 +1293,69 @@ header.contactBackground {
   -ms-grid-row: 6;
   -ms-grid-row-span: 5;
   grid-row: 6 / 11;
+}
+
+.contactInfo {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 3;
+  grid-row: 7 / 10;
+  height: 100%;
+}
+
+.contactInfo .flexInfo {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactInfo .flexInfo .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 65%;
+}
+
+.contactInfo .flexInfo .socialMedia i {
+  color: #0e902d;
+  font-size: 1.3rem;
+}
+
+.contactInfo .flexInfo .email {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.contactInfo .flexInfo .email a {
+  color: black;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.contactInfo .flexInfo .contactInformation {
+  font-family: "Roboto", sans-serif;
+  line-height: 34px;
+  text-transform: capitalize;
+}
+
+.contactInfo .flexInfo .contactInformation .zipcode {
+  text-transform: uppercase;
 }
 
 footer .copyright {

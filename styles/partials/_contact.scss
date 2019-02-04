@@ -14,13 +14,14 @@ header.contactBackground {
     .contactTitle {
         grid-column-start: 2;
         grid-column-end: 4;
-        grid-row-start: 4;
+        grid-row-start: 3;
         grid-row-end: 6;
 
         h1 {
             color: $yellow;
             font-size: 4rem;
             text-transform: capitalize;
+            margin-top: 15%;
         }
     }
     .contactForm{
@@ -53,7 +54,7 @@ header.contactBackground {
                     border-color: $green;
                     display: block;
                     background: white;
-                    font-size: 1.3rem;
+                    font-size: 1rem;
                     line-height: 1.9;
                     width: 47%;
                     color: black;
@@ -97,8 +98,8 @@ header.contactBackground {
                 color: white;
                 width: 100%;
                 border: none;
-                height: 20%;
-                margin-top: 5%;
+                height: 50px;
+                margin-top: 3%;
                 font-weight: bold;
             }
 
@@ -117,4 +118,46 @@ header.contactBackground {
         grid-row: 6 / 11;
     }
 
+}
+.contactInfo{
+    grid-column: 2 / 4;
+    grid-row: 7 / 10;
+    height:100%;
+
+    .flexInfo{
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .socialMedia{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 65%;
+
+                i{
+                    color:$green;
+                    font-size: 1.3rem;
+                }
+        }
+        .email{
+            font-family:$font2;
+            a{
+                color:black;
+                font-size:1.3rem;
+                text-decoration: none;
+            }
+        }
+        .contactInformation{
+            font-family: $font1;
+            line-height:34px;
+            text-transform: capitalize;
+
+            .zipcode{
+                text-transform: uppercase;
+            }
+        }
+    }
+    
 }

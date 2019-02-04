@@ -1,0 +1,43 @@
+article {
+    width: calc(70% - 10%);
+    margin-left: 10%;
+    margin-top: 21%;
+    padding-top: 3%;
+
+    .blogBorder{
+        box-shadow: -10px 20px $yellow;
+        width:90%;
+        margin-left: -1.5%;
+        margin-top: -5%;
+    }
+
+
+    .blogTitle{
+        padding-top:5%;
+        margin-left:5%;
+            h3{
+                font-family: $font2;
+                font-size:1.8rem;
+                margin-top: 10%;
+                margin-bottom:1%;
+            }
+            p{
+                font-family: $font1;
+                color:$darkgreen;
+                font-style:italic;
+                text-transform: capitalize;
+                padding-bottom:8%;
+            }
+            span{
+                font-weight: bold;
+            }
+            }
+            .blogText{
+                font-family: $font1;
+                line-height:30px;
+                width:90%;
+                margin-left:5%;
+            }
+    }
+    
+

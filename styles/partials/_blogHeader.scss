@@ -43,3 +43,8 @@ header.blogBackground{
 main.blogMain{
     background:$white;
 }
+section.topBlog{
+    display: flex;
+    flex-direction: row;
+}
+

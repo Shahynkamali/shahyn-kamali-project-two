@@ -1,0 +1,135 @@
+.comments{
+    display: grid;
+    width:100%;
+    height:120vh;
+    grid-template-columns:40% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 5% 5% repeat(8, 10%);
+
+    .commentsTitle{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        h4{
+            font-family: $font2;
+            font-size:1.3rem;
+            text-transform: capitalize;
+        }
+    }
+
+    .comment1{
+        grid-column: 2 / 7;
+        grid-row: 3 / 5;
+
+    }
+    .comment2{
+        grid-column: 2 / 7;
+        grid-row: 5 / 7;
+
+    }
+    form{
+        grid-column: 2 / 7;
+        grid-row: 7 / 11;
+
+    }
+    .comment1,
+    .comment2{
+        display:flex;
+        flex-direction: row;
+        width: 100%;
+
+    }
+    .commentUser{
+        display: flex;
+        flex-direction: column;
+        margin-left:5%;
+        height:70%;
+        justify-content: space-around;
+        h5{
+            font-family: $font2;
+            color:$darkgreen;
+            text-transform: capitalize;
+            font-size: 1.1rem;
+        }
+        p{
+            font-family: $font1;
+            line-height: 30px;
+            font-size:0.9rem;
+        }
+
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        font-family: $font2;
+        
+        fieldset{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            border:none;
+            justify-content: space-between;
+
+            input {
+                outline: 0;
+                border-width: 0 0 2px;
+                border-color: $green;
+                display: block;
+                background: none;
+                font-size: 1.3rem;
+                line-height: 1.9;
+                width: 47%;
+                color: black;
+                transition: all 0.28s ease;
+                box-shadow: none;
+                margin-left: -2%;
+                margin-right: -1%;
+                
+            }
+
+
+            input:focus {
+                border-color: $yellow;
+            }
+
+        }
+
+        textarea {
+        border: 2px solid #0e902d;
+        display: block;
+        background: none;
+        font-size: 1rem;
+        width: 100%;
+        color: black;
+        transition: all 0.28s ease;
+        box-shadow: none;
+        padding: 5%;
+        margin-top:3%;
+            
+
+
+        }
+
+        textarea:focus{
+            border-color: $yellow;
+
+        }
+        input[type="submit"]{
+            background: $green;
+            color:white;
+            width:100%;
+            border:none;
+            height:20%;
+            margin-top:5%;
+            font-weight: bold;
+        }
+        input[type="submit"]:focus{
+            background: $yellow;
+            color:$green;
+        }
+
+
+    }
+
+
+
+}

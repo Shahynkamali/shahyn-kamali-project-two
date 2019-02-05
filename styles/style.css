@@ -198,8 +198,19 @@ html {
   font-family: "Josefin Sans", sans-serif;
 }
 
+section {
+  max-width: 1600px;
+  width: 100%;
+}
+
+.container {
+  max-width: 1600px;
+  width: 100%;
+}
+
 .wrapper {
   max-width: 1220px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -1383,6 +1394,14 @@ footer .copyright {
   article {
     padding-top: 8%;
   }
+  .blogHeaders .blogBlock {
+    -ms-grid-column: 6;
+        grid-column-start: 6;
+    grid-column-end: 11;
+    -ms-grid-row: 7;
+        grid-row-start: 7;
+    grid-row-end: 11;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1406,7 +1425,7 @@ footer .copyright {
   .asideBlog {
     width: 100%;
     text-align: center;
-    margin: 2%;
+    margin: 0;
     padding: 0;
   }
   .asideBlog .asideItems {

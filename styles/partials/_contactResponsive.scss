@@ -2,7 +2,7 @@
     .contactHeaders .contactForm {
         grid-column-start: 5;
         grid-column-end: 10;
-        grid-row-start: 5;
+        grid-row-start: 4;
         grid-row-end: 10;
 
     }
@@ -20,9 +20,6 @@
 
 @media only screen and (max-width: 800px) {
 
-
-
-
     .contactHeaders .contactTitle {
         grid-column-start: 1;
         grid-column-end: 12;
@@ -39,17 +36,37 @@
 
 
     }
+    .contactInfo {
+        .flexInfo {
+            .contactInformation {
+                text-align: center;
+            }
+
+            .email {
+                text-align: center;
+                
+            }
+        }
+    }
 
     .contactHeaders .contactForm {
         grid-column-start: 3;
         grid-column-end: 10;
         grid-row-start: 2;
-        grid-row-end: 8;  
+        grid-row-end: 9;  
         form{
             padding: 25px;
             fieldset{
                 flex-direction: column;
+                width: 100%;
+                input{
+                    width:100%;
+                }
             }
+            textarea{
+                margin:0;
+            }
+
         }
     }
     
@@ -57,7 +74,7 @@
     .contactInfo {
 
         grid-column: 2 / 10;
-        grid-row: 9 / 10;
+        grid-row: 10 / 10;
 
     }
 
@@ -74,8 +91,9 @@
         grid-column-start: 1;
         grid-column-end: 11;
         grid-row-start: 2;
-        grid-row-end: 8;
+        grid-row-end: 9;
         box-shadow: none;
+        
 
         form fieldset input {
             font-size: 0.9rem;

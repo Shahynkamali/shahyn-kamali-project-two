@@ -1547,8 +1547,8 @@ footer .copyright {
     -ms-grid-column: 5;
         grid-column-start: 5;
     grid-column-end: 10;
-    -ms-grid-row: 5;
-        grid-row-start: 5;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
     grid-row-end: 10;
   }
   .contactInfo {
@@ -1579,13 +1579,19 @@ footer .copyright {
     font-size: 2rem;
     margin-top: 3%;
   }
+  .contactInfo .flexInfo .contactInformation {
+    text-align: center;
+  }
+  .contactInfo .flexInfo .email {
+    text-align: center;
+  }
   .contactHeaders .contactForm {
     -ms-grid-column: 3;
         grid-column-start: 3;
     grid-column-end: 10;
     -ms-grid-row: 2;
         grid-row-start: 2;
-    grid-row-end: 8;
+    grid-row-end: 9;
   }
   .contactHeaders .contactForm form {
     padding: 25px;
@@ -1595,14 +1601,20 @@ footer .copyright {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
+  }
+  .contactHeaders .contactForm form fieldset input {
+    width: 100%;
+  }
+  .contactHeaders .contactForm form textarea {
+    margin: 0;
   }
   .contactInfo {
     -ms-grid-column: 2;
     -ms-grid-column-span: 8;
     grid-column: 2 / 10;
-    -ms-grid-row: 9;
-    -ms-grid-row-span: 1;
-    grid-row: 9 / 10;
+    -ms-grid-row: 10;
+    grid-row: 10 / 10;
   }
   .contactInfo .flexInfo .socialMedia {
     -ms-flex-pack: distribute;
@@ -1619,7 +1631,7 @@ footer .copyright {
     grid-column-end: 11;
     -ms-grid-row: 2;
         grid-row-start: 2;
-    grid-row-end: 8;
+    grid-row-end: 9;
     -webkit-box-shadow: none;
             box-shadow: none;
   }

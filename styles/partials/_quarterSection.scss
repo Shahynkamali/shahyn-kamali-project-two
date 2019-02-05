@@ -1,54 +1,59 @@
-.quarterSection{
-    background:white;
-    height:100vh;
-    display:grid;
-    grid-template-rows:5% 5% 17.5% 17.5% 10% 17.5% 17.5% 5% 5%;
-    grid-template-columns: 22.5% 22.5% 10% 22.5% 22.5%;
+.quarterSection {
+    background: white;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(11, 1fr);
 
-    .miniWrapperOne{
-        grid-row-start: 6;
-        grid-row-end: 10;
+    .miniWrapperOne {
+        grid-row-start: 8;
+        grid-row-end: 13;
         grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column-end: 6;
         @include flexC;
         justify-content: flex-start;
         align-items: flex-end;
-        h3{
+
+        h3 {
             font-family: $font2;
             text-transform: capitalize;
         }
-        p{
+
+        p {
             text-align: right;
-            width:80%;
+            width: 80%;
             line-height: 2rem;
             font-family: $font1;
         }
+
         button {
             margin-top: 5%;
         }
-        
-        
+
+
     }
 
-    .flowerBackground{
+    .flowerBackground {
         grid-row-start: 1;
-        grid-row-end: 5;
+        grid-row-end: 6;
         grid-column-start: 1;
-        grid-column-end: 3;
-        background:url("./images/left-flowers.jpg");
-        background-position: center center;
-        background-size:cover;
-        background-repeat:no-repeat;
+        grid-column-end: 6;
         box-shadow: 30px 40px $yellow;
-        z-index:99;
+        z-index: 99;
+        img {
+            width: 100%;
+            height:100%;
+            display: block;
+            object-fit: cover;
+        }
 
 
     }
-    .miniWrapperTwo{
+
+    .miniWrapperTwo {
         grid-row-start: 1;
-        grid-row-end: 5;
-        grid-column-start: 4;
-        grid-column-end: 6;
+        grid-row-end: 6;
+        grid-column-start: 7;
+        grid-column-end: 12;
         @include flexC;
         justify-content: flex-end;
         align-items: flex-start;
@@ -60,45 +65,52 @@
 
         p {
             text-align: left;
-            width: 80%;
+           /*  width: 80%; */
             line-height: 2rem;
             font-family: $font1;
         }
-        button{
-            margin-top:5%;
+
+        button {
+            margin-top: 5%;
         }
 
-        
-    }
-    .budBackground{
-        grid-row-start: 6;
-        grid-row-end: 10;
-        grid-column-start: 4;
-        grid-column-end: 6;
-        background:url("./images/right-flowers.jpg");
-        background-position: center center;
-        background-size:cover;
-        background-repeat:no-repeat;
-        box-shadow: -20px 27px #f8e71c;
-        z-index:99;
-        
-    }
-    .greyBackground{
-        grid-row-start: 9;
-        grid-row-end: 10;
-        grid-column-start: 1;
-        grid-column-end: 10;
-        background:$white;
 
     }
-    .greyBack{
-        grid-row-start: 1;
-        grid-row-end: 2;
+
+    .budBackground {
+        grid-row-start: 8;
+        grid-row-end: 13;
+        grid-column-start: 7;
+        grid-column-end: 12;
+        background-repeat: no-repeat;
+        box-shadow: -20px 27px #f8e71c;
+        z-index: 99;
+        img{
+            width: 100%;
+            height:100%;
+            display: block;
+            object-fit: cover;
+
+        }
+
+    }
+
+    .greyBackground {
+        grid-row-start: 12;
+        grid-row-end: 12;
         grid-column-start: 1;
-        grid-column-end: 10;
-        background:$white;
+        grid-column-end: 11;
+        background: $white;
+
+    }
+
+    .greyBack {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 12;
+        background: $white;
 
     }
 
 }
-

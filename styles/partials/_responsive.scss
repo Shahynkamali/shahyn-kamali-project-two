@@ -1,0 +1,76 @@
+@media only screen and (max-width: 1100px){
+    .headerImg{
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .aboutPlanted h2{
+        font-size:3rem;
+    }
+    .labels,
+    .founder{
+        width: 90%;
+    }
+
+
+    }
+
+
+    @media only screen and (max-width: 1038px) {
+    .comments .comment2 {
+        grid-column: 1 / 7;
+        grid-row: 5 / 7;
+    }
+    .comments .comment1 {
+        grid-column: 1 / 7;
+        grid-row: 3 / 5;
+    }
+    .comments form {
+        grid-column: 1 / 6;
+        grid-row: 7 / 11;
+        margin-left:10%;
+        margin-right:10%;
+    }
+    }
+        @media only screen and (max-width: 580px){
+            .comments{
+                display:flex;
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+            }
+            .comments .commentsTitle h4 {
+                margin-bottom: 10%;
+            }
+        }
+        @media only screen and (max-width: 325px){
+            .comments{
+                margin-top: 5%;
+
+            }
+
+            .comment1,
+            .comment2{
+                margin:5% 0;
+            }
+            .comments form input[type="submit"] {
+                height: 10%;
+                margin-top: 1%;
+                margin-bottom: 20%;
+            }
+            .comments form input[type="submit"] {
+                height: 9%;
+                margin-top: 2%;
+                margin-bottom: 22%;
+            }
+            .comments form fieldset input{
+                font-size:0.8rem;
+            }
+            footer .copyright {
+                margin-top: 42%;
+            }
+        }
+
+
+
+
+

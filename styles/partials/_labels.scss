@@ -1,10 +1,11 @@
 .labels{
     display:grid;
-    height:60vh;
     grid-template-columns: 5% 5% 40% 5% 5% 40%;
     grid-template-rows: 10% 35% 10% 35% 10%;
     align-content: center;
     padding-top: 4%;
+    padding-top: 5%;
+    padding-bottom: 8%;
 
     .leaf{
         grid-column-start: 1;
@@ -19,6 +20,7 @@
         grid-row-start: 1; 
         grid-row-end: 3;
         display: grid;
+        padding-bottom:20%;
         h3{
             font-family: $font2;
             text-transform: capitalize;
@@ -45,6 +47,7 @@
         grid-row-start: 1;
         grid-row-end: 3;
         display: grid;
+        padding-bottom:20%;
         h3 {
             font-family: $font2;
             text-transform: capitalize;

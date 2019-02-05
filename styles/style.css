@@ -201,7 +201,6 @@ html {
 .wrapper {
   max-width: 1220px;
   margin: 0 auto;
-  /* border: 1px solid red; */
 }
 
 .navbar {
@@ -379,22 +378,21 @@ header {
 
 .quarterSection {
   background: white;
-  height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 5% 5% 17.5% 17.5% 10% 17.5% 17.5% 5% 5%;
-      grid-template-rows: 5% 5% 17.5% 17.5% 10% 17.5% 17.5% 5% 5%;
-  -ms-grid-columns: 22.5% 22.5% 10% 22.5% 22.5%;
-      grid-template-columns: 22.5% 22.5% 10% 22.5% 22.5%;
+  -ms-grid-rows: (1fr)[12];
+      grid-template-rows: repeat(12, 1fr);
+  -ms-grid-columns: (1fr)[11];
+      grid-template-columns: repeat(11, 1fr);
 }
 
 .quarterSection .miniWrapperOne {
-  -ms-grid-row: 6;
-      grid-row-start: 6;
-  grid-row-end: 10;
+  -ms-grid-row: 8;
+      grid-row-start: 8;
+  grid-row-end: 13;
   -ms-grid-column: 1;
       grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -429,26 +427,30 @@ header {
 .quarterSection .flowerBackground {
   -ms-grid-row: 1;
       grid-row-start: 1;
-  grid-row-end: 5;
+  grid-row-end: 6;
   -ms-grid-column: 1;
       grid-column-start: 1;
-  grid-column-end: 3;
-  background: url("./images/left-flowers.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  grid-column-end: 6;
   -webkit-box-shadow: 30px 40px #f8e71c;
           box-shadow: 30px 40px #f8e71c;
   z-index: 99;
 }
 
+.quarterSection .flowerBackground img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .quarterSection .miniWrapperTwo {
   -ms-grid-row: 1;
       grid-row-start: 1;
-  grid-row-end: 5;
-  -ms-grid-column: 4;
-      grid-column-start: 4;
-  grid-column-end: 6;
+  grid-row-end: 6;
+  -ms-grid-column: 7;
+      grid-column-start: 7;
+  grid-column-end: 12;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,7 +473,7 @@ header {
 
 .quarterSection .miniWrapperTwo p {
   text-align: left;
-  width: 80%;
+  /*  width: 80%; */
   line-height: 2rem;
   font-family: "Roboto", sans-serif;
 }
@@ -481,45 +483,49 @@ header {
 }
 
 .quarterSection .budBackground {
-  -ms-grid-row: 6;
-      grid-row-start: 6;
-  grid-row-end: 10;
-  -ms-grid-column: 4;
-      grid-column-start: 4;
-  grid-column-end: 6;
-  background: url("./images/right-flowers.jpg");
-  background-position: center center;
-  background-size: cover;
+  -ms-grid-row: 8;
+      grid-row-start: 8;
+  grid-row-end: 13;
+  -ms-grid-column: 7;
+      grid-column-start: 7;
+  grid-column-end: 12;
   background-repeat: no-repeat;
   -webkit-box-shadow: -20px 27px #f8e71c;
           box-shadow: -20px 27px #f8e71c;
   z-index: 99;
 }
 
+.quarterSection .budBackground img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .quarterSection .greyBackground {
-  -ms-grid-row: 9;
-      grid-row-start: 9;
-  grid-row-end: 10;
+  -ms-grid-row: 12;
+      grid-row-start: 12;
+  grid-row-end: 12;
   -ms-grid-column: 1;
       grid-column-start: 1;
-  grid-column-end: 10;
+  grid-column-end: 11;
   background: #f0efed;
 }
 
 .quarterSection .greyBack {
   -ms-grid-row: 1;
       grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 1;
   -ms-grid-column: 1;
       grid-column-start: 1;
-  grid-column-end: 10;
+  grid-column-end: 12;
   background: #f0efed;
 }
 
 .labels {
   display: -ms-grid;
   display: grid;
-  height: 60vh;
   -ms-grid-columns: 5% 5% 40% 5% 5% 40%;
       grid-template-columns: 5% 5% 40% 5% 5% 40%;
   -ms-grid-rows: 10% 35% 10% 35% 10%;
@@ -527,6 +533,8 @@ header {
   -ms-flex-line-pack: center;
       align-content: center;
   padding-top: 4%;
+  padding-top: 5%;
+  padding-bottom: 8%;
 }
 
 .labels .leaf {
@@ -547,6 +555,7 @@ header {
   grid-row-end: 3;
   display: -ms-grid;
   display: grid;
+  padding-bottom: 20%;
 }
 
 .labels .leafText h3 {
@@ -580,6 +589,7 @@ header {
   grid-row-end: 3;
   display: -ms-grid;
   display: grid;
+  padding-bottom: 20%;
 }
 
 .labels .usersText h3 {
@@ -705,8 +715,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .founder .ladyImg {
@@ -767,8 +775,8 @@ header {
   display: -ms-grid;
   display: grid;
   grid-gap: 35px;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: 400px;
 }
 
@@ -807,11 +815,12 @@ header.blogBackground {
   -ms-grid-row: 6;
       grid-row-start: 6;
   grid-row-end: 8;
+  z-index: 99;
 }
 
 .blogHeaders .blogTitle h1 {
   color: #f8e71c;
-  font-size: 5rem;
+  font-size: 5vw;
   text-transform: capitalize;
 }
 
@@ -1372,5 +1381,94 @@ footer .copyright {
   font-family: "Roboto", sans-serif;
   word-spacing: 20%;
   padding: 1% 0;
+}
+
+@media only screen and (max-width: 1100px) {
+  .headerImg {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .aboutPlanted h2 {
+    font-size: 3rem;
+  }
+  .labels,
+  .founder {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1038px) {
+  .comments .comment2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1 / 7;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 2;
+    grid-row: 5 / 7;
+  }
+  .comments .comment1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1 / 7;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    grid-row: 3 / 5;
+  }
+  .comments form {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / 6;
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 4;
+    grid-row: 7 / 11;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .comments {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .comments .commentsTitle h4 {
+    margin-bottom: 10%;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .comments {
+    margin-top: 5%;
+  }
+  .comment1,
+  .comment2 {
+    margin: 5% 0;
+  }
+  .comments form input[type="submit"] {
+    height: 10%;
+    margin-top: 1%;
+    margin-bottom: 20%;
+  }
+  .comments form input[type="submit"] {
+    height: 9%;
+    margin-top: 2%;
+    margin-bottom: 22%;
+  }
+  .comments form fieldset input {
+    font-size: 0.8rem;
+  }
+  footer .copyright {
+    margin-top: 42%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

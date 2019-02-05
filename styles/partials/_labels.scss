@@ -1,127 +1,44 @@
+
+
 .labels{
-    display:grid;
-    grid-template-columns: 5% 5% 40% 5% 5% 40%;
-    grid-template-rows: 10% 35% 10% 35% 10%;
-    align-content: center;
-    padding-top: 4%;
-    padding-top: 5%;
-    padding-bottom: 8%;
+    display:flex;
+    flex-direction:column;
+    margin:5% 0;
+    height:40vh;
+    justify-content: space-around;
 
-    .leaf{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-
-    .leafText{
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 1; 
-        grid-row-end: 3;
-        display: grid;
-        padding-bottom:20%;
+    .labelColumnOne,
+    .labelColumnTwo {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        
         h3{
             font-family: $font2;
-            text-transform: capitalize;
-            align-self: center;
+            text-transform:capitalize;
         }
         p{
-            line-height: 37px;
             font-family: $font1;
         }
 
-
+        .leaf,
+        .file,
+        .phone,
+        .users{
+            margin-right:3%;
+            background:$yellow;
+            height: 40%;
+            width: 10%;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-    .users{
-        grid-column-start: 5;
-        grid-column-end: 6;
-        grid-row-start: 1;
-        grid-row-end: 2;
         
-
-    }
-    .usersText{
-        grid-column-start: 6;
-        grid-column-end: 7;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        display: grid;
-        padding-bottom:20%;
-        h3 {
-            font-family: $font2;
-            text-transform: capitalize;
-            align-self: center;
-        }
-        p {
-            line-height: 37px;
-            font-family: $font1;
-        }
-
-    }
-    .file{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;
-
-    }
-    .fileText{
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 3;
-        grid-row-end: 5;
-        display: grid;
-        h3 {
-            font-family: $font2;
-            text-transform: capitalize;
-            align-self: center;
-        }
-        p {
-            line-height: 37px;
-            font-family: $font1;
-        }
-
     }
 
-    .phone{
-        grid-column-start: 5;
-        grid-column-end: 6;
-        grid-row-start: 3;
-        grid-row-end: 4;
-
-    }
-    .phoneText{
-        grid-column-start: 6;
-        grid-column-end: 7;
-        grid-row-start: 3;
-        grid-row-end: 5;
-        display: grid;
-        h3 {
-            font-family: $font2;
-            text-transform: capitalize;
-            align-self: center;
-        }
-        p {
-            line-height: 37px;
-            font-family: $font1;
-        }
-
-    }
-    .leaf,
-    .phone,
-    .users,
-    .file{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background:$yellow;
-        border-radius: 50%;
-        margin: 7px 15px;
-    }
-    
-    
-    
 }
+
+
+
 

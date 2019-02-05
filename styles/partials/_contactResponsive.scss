@@ -1,0 +1,101 @@
+@media only screen and (max-width: 930px) {
+    .contactHeaders .contactForm {
+        grid-column-start: 5;
+        grid-column-end: 10;
+        grid-row-start: 5;
+        grid-row-end: 10;
+
+    }
+
+    .contactInfo {
+        grid-column: 1 / 4;
+        grid-row: 7 / 10;
+        margin-left: 5%;
+    }
+    .contactHeaders .contactTitle h1{
+        font-size:3rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+
+
+
+    .contactHeaders .contactTitle {
+        grid-column-start: 1;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        h1 {
+
+            font-size: 2rem;
+
+            margin-top: 3%;
+
+        }
+
+
+    }
+
+    .contactHeaders .contactForm {
+        grid-column-start: 3;
+        grid-column-end: 10;
+        grid-row-start: 2;
+        grid-row-end: 8;  
+        form{
+            padding: 25px;
+            fieldset{
+                flex-direction: column;
+            }
+        }
+    }
+    
+
+    .contactInfo {
+
+        grid-column: 2 / 10;
+        grid-row: 9 / 10;
+
+    }
+
+    .contactInfo .flexInfo .socialMedia {
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+
+@media only screen and (max-width: 520px){
+    .contactHeaders .contactForm {
+
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 2;
+        grid-row-end: 8;
+        box-shadow: none;
+
+        form fieldset input {
+            font-size: 0.8rem;
+
+    }
+    
+    }
+    
+        .contactInfo{
+            .flexInfo{
+                .contactInformation{
+                        line-height: 28px;
+                        font-size: 0.9rem;
+                        margin-top: 3%;
+                    }
+                }
+            }
+        }
+        
+
+
+
+}

@@ -13,55 +13,11 @@
 
 }
 
-@media only screen and (max-width: 930px){
-    .contactHeaders .contactForm{
-        grid-column-start: 5;
-        grid-column-end: 10;
-        grid-row-start: 5;
-        grid-row-end: 10;
-
-    }
-    .contactInfo {
-        grid-column: 1 / 4;
-        grid-row: 7 / 10;
-        margin-left: 5%;
-    }
-}
-
-@media only screen and (max-width: 800px){
-    .contactHeaders .contactTitle {
-        grid-column-start: 1;
-        grid-column-end: 12;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        h1 {
-
-            font-size: 2rem;
-            
-            margin-top: 3%;
-
-        }
-        
-
-    }
-    .contactHeaders .contactForm {
-        grid-column-start: 3;
-        grid-column-end: 10;
-        grid-row-start: 2;
-        grid-row-end: 8;
-        padding: 12px;
-
-    }
-    .contactInfo {
-
-        grid-column: 2 / 10;
-        grid-row: 9 / 10;
-
-    }
+@media only screen and (max-width: 1100px){
     
-
-
 }
+
+
 
 
 

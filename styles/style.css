@@ -712,7 +712,7 @@ header.blogBackground {
 
 .blogHeaders .blogTitle h1 {
   color: #f8e71c;
-  font-size: 5vw;
+  font-size: 5rem;
   text-transform: capitalize;
 }
 
@@ -1335,6 +1335,9 @@ footer .copyright {
 }
 
 @media only screen and (max-width: 900px) {
+  .blogHeaders .blogTitle h1 {
+    font-size: 4rem;
+  }
   .asideBlog .asideItems .blogIndex,
   .asideBlog .asideItems .asideContent {
     width: 100%;
@@ -1383,6 +1386,17 @@ footer .copyright {
 }
 
 @media only screen and (max-width: 600px) {
+  .blogHeaders .blogTitle {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 8;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    grid-row-end: 5;
+  }
+  .blogHeaders .blogBlock {
+    display: none;
+  }
   section.topBlog {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1444,6 +1458,87 @@ footer .copyright {
     -ms-grid-row-span: 4;
     grid-row: 8 / 12;
     padding: 2% 10%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .comments form fieldset {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .comments form fieldset input {
+    font-size: 1rem;
+  }
+  .comments .commentsTitle h4 {
+    font-size: 1.1rem;
+  }
+  .comments .commentUser h5 {
+    font-size: 0.9rem;
+  }
+  .comments .commentUser p {
+    line-height: 28px;
+    font-size: 0.8rem;
+  }
+  .comments .comment1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 11;
+    grid-column: 1 / 12;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    grid-row: 2 / 5;
+  }
+  .comments .comment2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 11;
+    grid-column: 1 / 12;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 4;
+    grid-row: 5 / 9;
+  }
+}
+
+@media only screen and (max-width: 450px) and (max-width: 400px) {
+  .comments .commentsTitle {
+    -ms-grid-column: 5;
+    grid-column: 5 / 5;
+  }
+  .comments .comment1 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 4;
+    grid-row: 2 / 6;
+  }
+  .comments .comment2 {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 4;
+    grid-row: 5 / 9;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .comments form fieldset input {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .blogHeaders .blogBlock {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 11;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    grid-row-end: 11;
+  }
+  .comments .comment1 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    grid-row: 2 / 5;
+  }
+  article .blogText {
+    line-height: 20px;
   }
 }
 
@@ -1529,12 +1624,18 @@ footer .copyright {
             box-shadow: none;
   }
   .contactHeaders .contactForm form fieldset input {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    width: 100%;
   }
   .contactInfo .flexInfo .contactInformation {
     line-height: 28px;
     font-size: 0.9rem;
     margin-top: 3%;
+    text-align: center;
+  }
+  .contactInfo .flexInfo .email {
+    text-align: center;
+    padding: 2% 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

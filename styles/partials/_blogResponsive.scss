@@ -25,6 +25,10 @@
 }
 
 @media only screen and (max-width: 900px){
+    .blogHeaders .blogTitle h1{
+        font-size: 4rem;
+    }
+
     .asideBlog .asideItems .blogIndex,
     .asideBlog .asideItems .asideContent
         {
@@ -80,6 +84,19 @@
 
 }
 @media only screen and (max-width: 600px){
+    .blogHeaders .blogTitle {
+        grid-column-start: 3;
+        grid-column-end: 8;
+        grid-row-start: 5;
+        grid-row-end: 5;
+        
+    
+    }
+    .blogHeaders .blogBlock {
+        display:none;
+    }
+
+
     section.topBlog{
         flex-direction: column;
     }
@@ -136,5 +153,71 @@
 
     }
 
+
+}
+
+@media only screen and (max-width: 450px){
+    .comments form fieldset{
+        flex-direction: column;
+        input{
+            font-size: 1rem;
+        }
+    }
+    .comments .commentsTitle h4{
+        font-size:1.1rem;
+    }
+    .comments .commentUser h5{
+        font-size: 0.9rem;
+    }
+    .comments .commentUser p {
+        line-height: 28px;
+        font-size: 0.8rem;
+    }
+
+    .comments .comment1 {
+        grid-column: 1 / 12;
+        grid-row: 2 / 5;
+    }
+    .comments .comment2 {
+        grid-column: 1 / 12;
+        grid-row: 5 / 9;
+}
+
+@media only screen and (max-width: 400px){
+    .comments .commentsTitle {
+      
+        grid-column: 5 / 5;
+    }
+    .comments .comment1 {
+        grid-row: 2 / 6;
+    }
+    .comments .comment2 {
+        grid-row: 5 / 9;
+       
+    }
+
+
+}
+.comments form fieldset input{
+    margin:0;
+    width:100%;
+}
+
+}
+
+@media only screen and (max-width: 350px){
+
+    .blogHeaders .blogBlock {
+        grid-column-start: 2;
+        grid-column-end: 11;
+        grid-row-start: 5;
+        grid-row-end: 11;
+    }
+    .comments .comment1 {
+        grid-row: 2 / 5;
+    }
+    article .blogText {
+        line-height: 20px;
+    }
 
 }

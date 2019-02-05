@@ -78,7 +78,8 @@
         box-shadow: none;
 
         form fieldset input {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
+            width: 100%;
 
     }
     
@@ -90,6 +91,11 @@
                         line-height: 28px;
                         font-size: 0.9rem;
                         margin-top: 3%;
+                        text-align:center;
+                    }
+                    .email{
+                        text-align: center;
+                        padding: 2% 0;
                     }
                 }
             }

@@ -65,5 +65,48 @@
     width: 100%;
 }
 
+.open-slide{
+    display:none;
+    margin: 2% 5%;
+}
 
+.side-nav{
+    height:100%;
+    width:0;
+    position: fixed;
+    z-index:999999;
+    top:0;
+    left:0;
+    background-color:$yellow;
+    opacity: 0.9;
+    overflow-x:hidden;
+    padding-top:60px;
+    transition: 1s;
+    a{
+        color:$green;
+        padding: 10px 10px 10px 30px;
+        text-decoration: none;
+        font-size:22px;
+        display:block;
+        transition: 0.3s;
+        text-transform: capitalize;
+        font-family: $font1;
+
+        
+    }
+    
+    a:hover{
+        color:red;
+    }
+    .btn-close{
+        position: absolute;
+        top:20px;
+        right:22px;
+        font-size:36px;
+        margin-left: 50px;
+    }
+
+
+
+}
 

@@ -13,19 +13,36 @@
     <header>
         <nav>
             <div class="navbar wrapper">
+                <span class="open-slide">
+                    <a href="#" onclick="openSlideMenu()">
+                        <svg width="30" height="30">
+                            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"></path>
+                            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"></path>
+                            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"></path>
+                        </svg>
+                    </a>
+                </span>
                 <div class="navigationTitle">
                     <h4>planted</h4>
+                    
                 </div>
                 <div class="navigationList">
                     <ul>
                         <li><a class="line" href="index.html">home</a></li>
                         <li><a class="line" href="#about">about</a></li>
                         <li><a class="line" href="blog.html">blog</a></li>
-                        <li><a class="line" href="contact.html"">contact</a></li>
+                        <li><a class="line" href="contact.html">contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="index.html">home</a>
+            <a href="#about">about</a>
+            <a href="blog.html">blog</a>
+            <a href="contact.html">contact</a>
+        </div>
         <div class="headers">
             <div class="headerTitle">
             <h1>planted</h1><br/>
@@ -54,7 +71,7 @@
         </section>
         <section class="container quarterSection">
             <div class="flowerBackground">
-                <img src="./styles/images/left-flowers.jpg" alt="photo of founder">
+                <img src="./styles/images/left-flowers.jpg" alt="photo of flowers">
             </div>
             <div class="greyBack">
             </div>
@@ -67,7 +84,7 @@
                 <button class="greenButton">read more</button>
             </div>
             <div class="budBackground">
-                <img src="./styles/images/right-flowers.jpg" alt="photo of founder">
+                <img src="./styles/images/right-flowers.jpg" alt="photo of weed">
             </div>
             <div class="miniWrapperTwo">
                 <h3>upcoming workshops</h3>
@@ -161,5 +178,14 @@
             <span>2018 HackerYou</span>
         </div>
     </footer>
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width="200px"
+    
+        };
+        function closeSlideMenu() {
+                document.getElementById('side-menu').style.width = "0"
+            };
+    </script>
 </body>
 </html>

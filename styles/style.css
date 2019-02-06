@@ -302,6 +302,50 @@ section {
   width: 100%;
 }
 
+.open-slide {
+  display: none;
+  margin: 2% 5%;
+}
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  background-color: #f8e71c;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.side-nav a {
+  color: #0e902d;
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+}
+
+.side-nav a:hover {
+  color: red;
+}
+
+.side-nav .btn-close {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
 h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 10vw;
@@ -1430,6 +1474,15 @@ footer .copyright {
   .labels .labelColumnTwo .phone,
   .labels .labelColumnTwo .users {
     width: 30%;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  .navigationList {
+    display: none;
+  }
+  .open-slide {
+    display: block;
   }
 }
 

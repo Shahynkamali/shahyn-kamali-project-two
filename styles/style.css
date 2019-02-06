@@ -543,8 +543,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 5% 0;
-  height: 40vh;
+  padding: 5% 0;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -558,6 +557,15 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 33.3333%;
+      flex-basis: 33.3333%;
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
   width: 100%;
 }
 
@@ -582,8 +590,8 @@ header {
 .labels .labelColumnTwo .users {
   margin-right: 3%;
   background: #f8e71c;
-  height: 40%;
-  width: 10%;
+  height: 34%;
+  width: 12%;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -607,39 +615,35 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 60vh;
+  -ms-flex-preferred-size: 33.3333%;
+      flex-basis: 33.3333%;
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5% 0;
 }
 
 .founder .ladyImg {
-  -webkit-box-flex: calc(30% -5%);
-      -ms-flex: calc(30% -5%);
-          flex: calc(30% -5%);
   margin-right: 5%;
   -webkit-box-shadow: 20px 25px #f8e71c;
           box-shadow: 20px 25px #f8e71c;
 }
 
-.founder .ladyImg img {
-  display: block;
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-}
-
 .founder .aboutFounder {
-  -webkit-box-flex: 70%;
-      -ms-flex: 70%;
-          flex: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1302,9 +1306,74 @@ footer .copyright {
   .aboutPlanted h2 {
     font-size: 3rem;
   }
-  .labels,
   .founder {
-    width: 90%;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 824px) {
+  .founder .aboutFounder p {
+    line-height: 30px;
+  }
+  .labels .labelColumnOne .leaf,
+  .labels .labelColumnOne .file,
+  .labels .labelColumnOne .phone,
+  .labels .labelColumnOne .users,
+  .labels .labelColumnTwo .leaf,
+  .labels .labelColumnTwo .file,
+  .labels .labelColumnTwo .phone,
+  .labels .labelColumnTwo .users {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .labels {
+    width: 80%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  .labels .labelColumnOne,
+  .labels .labelColumnTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .labels .labelColumnOne .leaf,
+  .labels .labelColumnOne .file,
+  .labels .labelColumnOne .phone,
+  .labels .labelColumnOne .users,
+  .labels .labelColumnTwo .leaf,
+  .labels .labelColumnTwo .file,
+  .labels .labelColumnTwo .phone,
+  .labels .labelColumnTwo .users {
+    width: 16%;
+    height: 52px;
+    margin: 27px 0;
+  }
+  .founder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .founder .aboutFounder {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 8% 0;
   }
 }
 

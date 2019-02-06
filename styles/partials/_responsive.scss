@@ -6,16 +6,85 @@
     .aboutPlanted h2{
         font-size:3rem;
     }
-    .labels,
+    
     .founder{
-        width: 90%;
+        width: 95%;
+        margin: 0 auto;
     }
 
 }
+@media only screen and (max-width: 900px){
+    
 
-@media only screen and (max-width: 1100px){
+}
+
+@media only screen and (max-width: 824px){
+    .founder .aboutFounder p {
+        line-height: 30px;
+
+    }
+    .labels{
+        .labelColumnOne,
+        .labelColumnTwo {
+
+            .leaf,
+            .file,
+            .phone,
+            .users {
+                width: 30%;
+            }
+    }
+
     
 }
+    
+}
+
+
+
+@media only screen and (max-width: 700px){
+    .labels{
+        width:80%;
+        align-items: center;
+        margin: 0 auto;
+        .labelColumnOne,
+        .labelColumnTwo{
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+
+            .leaf,
+            .file,
+            .phone,
+            .users {
+                    width: 16%;
+                    height: 52px;
+                    margin: 27px 0;
+                    }
+
+            }
+        
+        }
+        .founder {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+
+            .aboutFounder {
+                align-items: center;
+                margin: 8% 0;
+            }
+        }
+    }
+
+
+
+
+
+    
+
+
+
 
 
 

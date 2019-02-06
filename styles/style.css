@@ -367,7 +367,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 60vh;
+  padding: 5% 0;
 }
 
 .aboutPlanted h2 {
@@ -1297,6 +1297,61 @@ footer .copyright {
   padding: 1% 0;
 }
 
+@media only screen and (max-width: 1304px) {
+  .greyBack,
+  .greyBackground {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1104px) {
+  .quarterSection .miniWrapperOne {
+    -ms-grid-row: 7;
+        grid-row-start: 7;
+  }
+  .quarterSection .miniWrapperTwo {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .quarterSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .quarterSection .flowerBackground,
+  .quarterSection .budBackground {
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .quarterSection .miniWrapperOne,
+  .quarterSection .miniWrapperTwo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5% 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .quarterSection .miniWrapperOne h3,
+  .quarterSection .miniWrapperTwo h3 {
+    text-align: center;
+  }
+  .quarterSection .miniWrapperOne p,
+  .quarterSection .miniWrapperTwo p {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 1100px) {
   .headerImg {
     -ms-grid-row: 3;
@@ -1312,7 +1367,18 @@ footer .copyright {
   }
 }
 
+@media only screen and (max-width: 1055px) {
+  .headerImg {
+    -ms-grid-row: 7;
+        grid-row-start: 7;
+    grid-row-end: 8;
+  }
+}
+
 @media only screen and (max-width: 824px) {
+  .headerTitle h1 {
+    font-size: 5rem;
+  }
   .founder .aboutFounder p {
     line-height: 30px;
   }
@@ -1374,6 +1440,34 @@ footer .copyright {
         -ms-flex-align: center;
             align-items: center;
     margin: 8% 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .headerTitle h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 10vw;
+  }
+  .headerImg {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .aboutPlanted h2 {
+    font-size: 2rem;
+    text-align: center;
   }
 }
 

@@ -5,4 +5,12 @@
     padding: 15px 41px;
     text-transform: capitalize;
     font-family: $font2;
+    position: relative;
+    display: block;
+
+
+}
+.greenButton:hover{
+    background: $yellow;
+    color:$green;
 }

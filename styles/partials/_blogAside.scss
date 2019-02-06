@@ -14,8 +14,7 @@
             }
         }
         .asideItems{
-            display:flex;
-            flex-direction: column;
+            @include flexC;
             width:103%;
             align-items: end;
             text-align: end;

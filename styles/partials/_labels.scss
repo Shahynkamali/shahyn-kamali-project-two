@@ -8,8 +8,7 @@
     
     .labelColumnOne,
     .labelColumnTwo {
-        display: flex;
-        flex-direction: row;
+        @include flexR;
         flex-grow: 1;
         flex-shrink: 0;
         flex-basis: 33.3333%;

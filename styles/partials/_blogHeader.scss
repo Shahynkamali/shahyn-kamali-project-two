@@ -43,11 +43,9 @@ header.blogBackground{
 }
 main.blogMain{
     background:$white;
-    display: flex;
-    flex-direction: column;
+    @include flexC;
 }
 section.topBlog{
-    display: flex;
-    flex-direction: row;
+   @include flexR;
 }
 
